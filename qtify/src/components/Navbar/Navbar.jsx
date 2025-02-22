@@ -25,7 +25,9 @@ const Navbar = ({ data, page, songsData }) => {
   }, [isFeedbackClicked]);
 
   return (
-    <>
+    <div className="navbarContainer">
+      {/* changed, added divclass navbarcontainer */}
+
       {isFeedbackClicked && (
         <Feedback onClose={() => setIsFeedbackClicked(false)} />
       )}
@@ -37,7 +39,7 @@ const Navbar = ({ data, page, songsData }) => {
           eventHandler={{ event: "onClick", handler: handleClick }}
         />
       </nav>
-    </>
+    </div>
   );
 };
 
