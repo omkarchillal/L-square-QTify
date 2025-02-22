@@ -35,7 +35,7 @@ const Navbar = ({ data, page, songsData }) => {
         <Logo />
         <Search data={page === "home" ? data : songsData} page={page} />
         <Button
-          text="GIVE FEEDBACK"
+          text="Give Feedback"
           eventHandler={{ event: "onClick", handler: handleClick }}
         />
       </nav>
