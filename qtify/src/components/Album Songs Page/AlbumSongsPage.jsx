@@ -5,6 +5,7 @@ import { fetchTopAlbum, fetchNewAlbum } from "../../api/api";
 import Navbar from "../Navbar/Navbar";
 import SongsHero from "../Songs Page Hero/SongsHero";
 import SongsTable from "../Table/Table";
+import Footer from "../Footer/Footer";
 const AlbumSongsPage = () => {
   let location = useLocation();
   let clickedAlbum = location.state.album;
@@ -30,6 +31,9 @@ const AlbumSongsPage = () => {
       <Navbar songsData={songs} page={"song"} />
       <SongsHero album={clickedAlbum} />
       <SongsTable album={clickedAlbum} />
+      <hr style={{ backgroundColor: "gray", border: "1px solid gray" }} />{" "}
+      <Footer />
+      <hr /> {/* <AudioBar song={{}}/> */}{" "}
     </div>
   );
 };

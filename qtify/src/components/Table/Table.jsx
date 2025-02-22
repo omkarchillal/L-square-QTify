@@ -74,12 +74,12 @@ function SongsTable({ album }) {
           </TableBody>
         </Table>
       </TableContainer>
-      <div
+      {/* <div
         style={{
           margin: "20px 0 70px 0",
           borderBottom: "3px solid rgba(255, 255, 255, 0.35)",
         }}
-      ></div>
+      ></div> */}
     </div>
   );
 }
