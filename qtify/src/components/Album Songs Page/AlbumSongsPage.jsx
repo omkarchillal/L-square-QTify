@@ -33,7 +33,6 @@ const AlbumSongsPage = () => {
       <SongsTable album={clickedAlbum} />
       <hr style={{ backgroundColor: "gray", border: "1px solid gray" }} />{" "}
       <Footer />
-      <hr /> {/* <AudioBar song={{}}/> */}{" "}
     </div>
   );
 };
